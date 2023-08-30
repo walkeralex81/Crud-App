@@ -1,2 +1,2 @@
 # Crud-App
-simple crud app using javascript
+simple create read update and delete app using javascript
