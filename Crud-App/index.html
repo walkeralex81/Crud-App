@@ -1,39 +1,54 @@
 <!DOCTYPE html>
 <html>
-  
-<!--link for css not working for some reason?-->
+  <!--link for css not working for some reason?-->
 
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <meta name="description" content="this is a to do list app to help eliminate stress, uses basic crud concept" />
-    <script src="app.js"></script>
-    <link rel="stylesheet" href="style.css"> 
-</head>
+    <meta
+      name="description"
+      content="this is a to do list app to help eliminate stress, uses basic crud concept"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <section>
+    <!--input box-->
+    <div>
+      <input
+        type="text"
+        id="add-task"
+        placeholder="what's causing us stress?"
+      />
+    </div>
 
-          <input type="text" id="add-task" placeholder="what's causing us stress?" />
-          <div>
-            <input type="submit" onclick="CreateTask()" value="Add">
-          </div>
-        </form>
+    <!--submit button-->
+    <div>
+      <input type="submit" onclick="CreateTask()" value="Add" />
+    </div>
 
-        <form action="javascript:void(0);" id="UpdateForm">
-          <input type="text" id="update-task" />
-          <div class="d-flex gap-2 col-3 py-4 mx-auto">
-            <input type="submit" value="Update" />
-            <a onclick="CloseInput()" id="close">&#10006;</a>
-          </div>
-        </form>
+    <!--form-->
+    <div>
+      <form action="javascript:void(0);" id="UpdateForm">
+        <input type="text" id="update-task" />
+        <div class="d-flex gap-2 col-3 py-4 mx-auto">
+          <input type="submit" value="Update" />
+          <a onclick="CloseInput()" id="close">&#10006;</a>
+        </div>
+      </form>
+    </div>
 
-        <p id="counter"></p>
-        
-        <table>
-          <tr>
-            <th>&#128151 My Stress Reliever List &#128151 &#10006</th>
-          </tr>
-          <tbody id="mytodo-tasks"></tbody>
-        </table>
-      </div>
-    
-    </section>
+    <div>
+      <p id="counter"></p>
+    </div>
+
+    <div>
+      <table>
+        <tr>
+          <th>My Stress Reliever List</th>
+        </tr>
+        <tbody id="mytodo-tasks"></tbody>
+      </table>
+    </div>
+  </section>
+  <script src="app.js"></script>
 </html>

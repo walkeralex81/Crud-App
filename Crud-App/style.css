@@ -3,14 +3,31 @@ button,
 #close {
   cursor: pointer;
 }
-.mytodo-list {
-  width: 500px;
+.mytodo-tasks {
+  width: 9000px;
   margin: 100px auto;
 }
 .counter {
   margin: 10px 0;
-  background-color: blue;
+  background-color: rgb(244, 244, 250);
 }
 #UpdateForm {
   display: none;
+  background-color: rgb(255, 0, 191);
+}
+
+body {
+  align-items: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-color: rgb(239, 232, 246);
+  align-content: center;
+}
+button {
+  border-radius: 150px;
+  background-color: hotpink;
+  box-shadow: 9px;
+}
+div {
+  display: flex;
+  align-items: center;
 }
